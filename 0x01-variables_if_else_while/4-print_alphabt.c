@@ -5,8 +5,9 @@
 /**
  * main - Prints the letters if alphabet but ommits q and e.
  *
- * Return: always 0 
+ * Return: always 0. 
  */
+
 int main(void)
 {
 	int i;
