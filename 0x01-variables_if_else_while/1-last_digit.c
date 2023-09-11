@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 /**
- * main -The main function prints the last digit n which is randomly generated, it also tells us whether n is greater than 5,0 or less than and not 0.
+ * main -The main function prints the last digit n which is randomly generated.
+ * it also tells us whether n is greater than 5,0 or less than and not 0.
  *
  * Return: Always 0.
  */
