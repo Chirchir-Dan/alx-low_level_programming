@@ -2,7 +2,7 @@
 
 
 	/**
-	 *print_alphabet - printletters of the alphabet in lowercase
+	 * print_alphabet - printletters of the alphabet in lowercase
 	 *
 	 */
 
