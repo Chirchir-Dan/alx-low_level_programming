@@ -1,48 +1,57 @@
 #include "main.h"
 
 /**
- * print_times_table - Print the times table for n, starting from 0.
- * @n: The desired times table (0-15).
+ * printTimesTable - prints the n times table, starting with 0
+ * @n: number of the times table
  */
-void print_times_table(int n)
+void printTimesTable(int n)
 {
-	if (n < 0 || n > 15)
-		return;
-
-	int row, column, product;
-
-	for (row = 0; row <= n; row++)
+	if (n >= 0 && n <= 15)
 	{
-		for (column = 0; column <= n; column++)
+		for (int row = 0; row <= n; row++)
 		{
-			product = row * column;
-			if (column > 0)
-			{
-				_putchar(',');
-				_putchar(' ');
-				if (product < 10)
-				{
-					_putchar(' ');
-					_putchar(' ');
-				}
-				else if (product >= 10 && product < 100)
-				{
-					_putchar(' ');
-				}
-			}
-
-			if (product < 10)
-				_putchar(' ');
-
-			if (product >= 100)
-				_putchar((product / 100) + '0');
-
-			if (product >= 10)
-				_putchar(((product / 10) % 10) + '0');
-
-			_putchar((product % 10) + '0');
+			printRow(row, n);
 		}
-		_putchar('\n');
 	}
+}
+
+/**
+ * printRow - prints a single row of the times table
+ * @row: the current row to print
+ * @n: the highest value for the times table
+ */
+void printRow(int row, int n)
+{
+	for (int column = 0; column <= n; column++)
+	{
+		int product = row * column;
+
+		printProduct(product, column == 0);
+	}
+	_putchar('\n');
+}
+
+/**
+ * printProduct - prints the product of two numbers with formatting
+ * @product: the product to print
+ * @isFirstColumn: true if it's the first column in the row, false otherwise
+ */
+void printProduct(int product, bool isFirstColumn)
+{
+	if (!isFirstColumn)
+	{
+		_putchar(',');
+		_putchar(' ');
+		if (product < 100)
+		{
+			_putchar(' ');
+			if (product < 10)
+			{
+				_putchar(' ');
+			}
+		}
+	}
+
+	_putchar(product + '0');
 }
 
