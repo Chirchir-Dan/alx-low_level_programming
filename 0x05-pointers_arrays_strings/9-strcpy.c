@@ -17,6 +17,6 @@ char *_strcpy(char *dest, char *src)
 
 	dest[i] = '\0';  /* Append the null byte to the destination string */
 
-	return dest;
+	return (dest);
 }
 
