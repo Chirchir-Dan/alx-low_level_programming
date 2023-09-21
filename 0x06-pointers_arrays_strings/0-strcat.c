@@ -11,11 +11,9 @@ char *_strcat(char *dest, char *src)
 {
 	char *dest_ptr = dest;
 
-	/* Find the end of the dest string */
 	while (*dest_ptr)
 		dest_ptr++;
 
-	/* Append the src string to dest */
 	while (*src)
 	{
 		*dest_ptr = *src;
@@ -23,7 +21,6 @@ char *_strcat(char *dest, char *src)
 		src++;
 	}
 
-	/* Add a terminating null byte */
 	*dest_ptr = '\0';
 
 	return dest;
