@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * _strncat - concatenate two strings using at most n bytes from src
- *
- * @dest: The destination string to which the source string will be appended
+ * _strncat - concatenate two strings using at most
+ * n bytes from src
+ * @dest: The destination string to which the
+ * source string will be appended
  * @src: The source string that will be appended to the destination
  * @n: The maximum number of bytes to append from src
  *
@@ -12,8 +13,11 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int dest_index;/* Index for the destination string */
-	int src_index;/* Index for the source string */
+	/* Index for the destination string */
+	int dest_index;
+
+	/* Index for the source string */
+	int src_index;
 	
 	/* Find the null-terminated end of the destination string */
 	dest_index = 0;
