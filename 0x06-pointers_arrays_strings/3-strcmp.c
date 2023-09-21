@@ -6,6 +6,7 @@
  *
  * Return: The difference between the ASCII values of the first differing characters
  */
+
 int _strcmp(char *s1, char *s2)
 {
 	int index;
