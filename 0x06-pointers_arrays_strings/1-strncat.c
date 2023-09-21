@@ -12,16 +12,16 @@ char *_strncat(char *dest, char *src, int n)
 {
     char *dest_ptr = dest;
     int dest_len = 0;
+    int i = 0; 
 
-    // Find the end of the dest string
+    /* Find the end of the dest string */
     while (*dest_ptr != '\0')
     {
         dest_ptr++;
         dest_len++;
     }
 
-    // Append characters from src to dest, up to n bytes or until src ends
-    int i = 0;
+    /* Append characters from src to dest, up to n bytes or until src ends */
     while (i < n && src[i] != '\0')
     {
         dest[dest_len] = src[i];
@@ -29,7 +29,7 @@ char *_strncat(char *dest, char *src, int n)
         i++;
     }
 
-    // Ensure the concatenated string is null-terminated
+    /* Ensure the concatenated string is null-terminated */
     dest[dest_len] = '\0';
 
     return dest;
