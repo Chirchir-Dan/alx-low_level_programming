@@ -1,6 +1,15 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+
+/**
+ * _putchar - Writes a character to stdout.
+ * @c: The character to write.
+ *
+ * Return: On success, the character written. On error, -1.
+ */
+int _putchar(char c);
+
 /**
  * _memset - Fills the first n bytes of the memory area pointed to by s with the constant byte b.
  * @s: Pointer to the memory area to be filled.
