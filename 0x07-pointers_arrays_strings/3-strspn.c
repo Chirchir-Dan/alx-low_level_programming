@@ -14,13 +14,15 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
 	int found;
-	int i; /* Variable declaration moved outside of the for loop */
+	int i; 
 
 	while (*s)
-	{
-		found = 0; /* Reset the found flag for each character in s */
-
-		for (i = 0; accept[i]; i++) /* Use the variable declared outside of the loop */
+	{	
+		/* Reset the found flag for each character in s */
+		found = 0; 
+		
+		/* Use the variable declared outside of the loop */
+		for (i = 0; accept[i]; i++) 
 		{
 			if (*s == accept[i])
 			{
@@ -31,7 +33,8 @@ unsigned int _strspn(char *s, char *accept)
 
 		if (!found)
 		{
-			break; /* Exit the loop when a character not in accept is found */
+			/* Exit the loop when a character not in accept is found */
+			break;
 		}
 
 		count++;
