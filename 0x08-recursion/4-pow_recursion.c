@@ -6,12 +6,13 @@
  * @x: The base.
  * @y: The exponent.
  *
- * Description: This function calculates the result of x raised to the power of y.
- *              If y is negative, the function returns -1 to indicate an error.
+ * Description:
+ *   This function calculates x raised to the power of y. If y is negative,
+ *   it returns -1 to indicate an error.
  *
- * Return: The result of x^y, or -1 if y is less than 0 (error).
+ * Return:
+ *   The result of x^y, or -1 if y is less than 0 (error).
  */
-
 int _pow_recursion(int x, int y)
 {
 	if (y < 0)
