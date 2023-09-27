@@ -1,3 +1,5 @@
+#include "main.h"
+
 /*
  * factorial - Calculates the factorial of a number.
  * @n: The number for which to calculate the factorial.
@@ -19,7 +21,7 @@ int factorial(int n)
 	else
 	{
 		/* Calculate the factorial using recursion. */
-		return n * factorial(n - 1);
+		return (n * factorial(n - 1));
 	}
 }
 
