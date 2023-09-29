@@ -1,3 +1,6 @@
+#include "main.h"
+
+
 /**
  * _strcpy - Copies a string including the null byte.
  * @dest: Pointer to the destination buffer.
