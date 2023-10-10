@@ -17,17 +17,19 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	if (d == NULL)
 		return;
 
-	d->name = strdup(name);
+	d->name = malloc(sizeof(char) * (strlen(name) + 1));
 	if (d->name == NULL)
 		return;
 
-	d->age = age;
-
-	d->owner = strdup(owner);
+	d->owner = malloc(sizeof(char) * (strlen(owner) + 1));
 	if (d->owner == NULL)
 	{
 		free(d->name);
 		return;
 	}
+
+	strcpy(d->name, name);
+	d->age = age;
+	strcpy(d->owner, owner);
 }
 
