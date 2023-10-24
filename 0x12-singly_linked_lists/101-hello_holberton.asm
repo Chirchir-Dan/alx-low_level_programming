@@ -1,7 +1,7 @@
 global _start
 	extern printf
 
-_start:
+start:
 	mov rdi, hello_format
 	xor rax, rax
 	call printf
