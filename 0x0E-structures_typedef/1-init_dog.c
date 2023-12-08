@@ -1,10 +1,7 @@
-<<<<<<< HEAD
 #include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
 
-=======
->>>>>>> ccd9e470abff5caff7c9fdfa9bb14f938449001d
 /**
  * init_dog - Initializes a variable of type struct dog
  * @d:       Pointer to a struct dog to initialize
