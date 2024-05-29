@@ -1,10 +1,10 @@
 # Makefile for building 'school' executable
 
 # Compiler
-CC := gcc
+CC = gcc
 
 # Source files
-SRC := main.c school.c
+SRC = main.c school.c
 
 # Rule to build the executable
 all: $(SRC)
