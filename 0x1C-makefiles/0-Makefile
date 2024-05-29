@@ -1,8 +1,5 @@
 # Makefile for building 'school' executable
 
 # Rule to build the executable
-all: school
-
-# Rule to compile and link the source files into 'school' executable
-school:
+all:
 	gcc main.c -o school
