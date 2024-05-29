@@ -1,0 +1,12 @@
+# Makefile
+
+all: school
+
+school: main.o
+	gcc -o school main.o
+
+main.o: main.c
+    gcc -c main.c
+
+clean:
+	rm -f *.o school
