@@ -4,5 +4,5 @@
 all: school
 
 # Rule to compile and link the source files into 'school' executable
-school: main.c school.c
-    gcc main.c school.c -o school
+school:
+	gcc main.c -o school
